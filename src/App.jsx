@@ -10,10 +10,9 @@ function App() {
       <div className="fixed inset-0 bg-black"></div>
       <ShootingStars />
       <div className="relative z-10">
-        <Navbar />
         <Content />
       </div>
-      <div className='h-20 w-full'></div>
+      <div className='h-40 w-full'></div>
     </div>
   );
 }

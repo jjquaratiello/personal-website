@@ -1,29 +1,63 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Content: React.FC = () => {
     return (
         <div className="flex flex-col items-center h-auto animated-fade-in cursor-default x-5 max-w-2xl mx-auto">
             {/* Header Section */}
-            <div className="mt-40 w-full items-center">
+            <div className="px-5 mt-40 w-full items-center">
                 <img
                     src="/me.jpg"
                     className="w-32 h-32 rounded-full"
                     alt="Profile"
                 />
                 <h1 className="text-2xl font-bold mt-4">Joseph Quaratiello</h1>
+
                 <h3 className="text-md font-medium mt-2">
-                    <span className="color-transition hover-cyber-blue">COMPUTER</span> &
-                    <span className="color-transition hover-cyber-purple"> MECHANICAL</span> ENGINEERING STUDENT
+                    COMPUTER AND MECHANICAL ENGINEERING
+                    <span className="text-green-600"> @ DARTMOUTH COLLEGE</span>
                 </h3>
-                <h3 className="text-sm font-bold mt-2">jjquaratiello@gmail.com</h3>
-                <div className="flex flex-row items-center rounded-xl space-x-3 mt-4 cursor-default">
-                    <img src="/dartmouth.jpg" className="w-10 h-10 object-cover rounded-lg" alt="Dartmouth Logo" />
-                    <h3 className="text-sm font-medium text-white">Dartmouth College</h3>
+
+                <div className="my-4">
+                    <span className="inline-block bg-gradient-to-r from-cyan-500 to-purple-500 text-white text-sm font-bold rounded-full shadow-lg neon-glow px-4 py-1">
+                        Aspiring Astronautical Engineer & Entrepreneur
+                    </span>
+                </div>
+
+
+                <h3 className="text-sm font-bold">jjquaratiello@gmail.com</h3>
+                <div className="max-w-2xl mx-auto flex justify-between items-center py-4">
+                    {/* YouTube and LinkedIn Icons */}
+                    <div className="flex space-x-3">
+                        <a
+                            href="https://www.youtube.com/@joequ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 flex items-center justify-center bg-red-900 rounded-full hover:bg-red-500 transition-colors"
+                        >
+                            <FaYoutube className="text-white w-6 h-6" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/josephquaratiello/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-blue-500 transition-colors"
+                        >
+                            <FaLinkedin className="text-white w-6 h-6" />
+                        </a>
+                        <a
+                            href="https://github.com/jjquaratiello"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-gray-500 transition-colors"
+                        >
+                            <FaGithub className="text-white w-6 h-6" />
+                        </a>
+                    </div>
                 </div>
             </div>
 
             {/* Passion Section */}
-            <div className="w-full mt-20">
+            <div className="w-full mt-20 px-5 ">
                 <h2 className="text-xl font-bold mb-4 text-white">About Me</h2>
                 <p className="text-md leading-relaxed text-white font-normal">
                     I am a passionate builder with a love for learning and discovery. I thrive on tackling
@@ -39,7 +73,7 @@ const Content: React.FC = () => {
             </div>
 
             {/* Work Timeline */}
-            <div className="w-full mt-20">
+            <div className="w-full mt-20 px-5 ">
                 <h2 className="text-xl font-bold mb-4 text-white">What I've Done So Far</h2>
                 <div>
                     {/* Timeline Items */}
@@ -102,7 +136,7 @@ const Content: React.FC = () => {
             </div>
 
             {/* Projects */}
-            <div className="w-full mt-10">
+            <div className="w-full mt-10 px-5 ">
                 <h2 className="text-xl font-bold mb-4 text-white">Some Cool Projects</h2>
                 {/* Scrollable Container */}
                 <div className="grid grid-cols-1 gap-6">
@@ -182,7 +216,7 @@ const Content: React.FC = () => {
                 </div>
             </div>
             {/* Courses Section */}
-            <div className="w-full mt-20">
+            <div className="w-full mt-20 px-5 ">
                 <h2 className="text-xl font-bold mb-4 text-white">Relevant Courses</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {[
@@ -217,7 +251,7 @@ const Content: React.FC = () => {
                     ].map((course, index) => (
                         <div
                             key={index}
-                            className="relative bg-gray-800 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                            className="relative bg-gray-800 p-4 rounded-lg"
                         >
                             {/* Course Title */}
                             <div className="flex items-center space-x-2">

@@ -9,6 +9,9 @@
   font-weight: 400;
   background-color: black;
   color: white;
+  user-select: none;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: auto;   /* Keep vertical scrolling */
 }
 
 
@@ -50,10 +53,6 @@
   animation: shooting 2s linear infinite;
 }
 
-/* Hide horizontal scrollbar */
-html, body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
 
 
 

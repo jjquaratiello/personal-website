@@ -2,13 +2,8 @@ import { FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="fixed inset-x-5 top-5 max-w-2xl text-white mx-auto rounded-xl z-50">
+        <nav className="fixed px-5  max-w-2xl text-white mx-auto rounded-xl z-50">
             <div className="max-w-2xl mx-auto flex justify-between items-center py-4">
-                {/* Logo */}
-                <div className="text-lg font-bold text-black bg-white rounded-full w-12 h-12 flex items-center justify-center">
-                    <a href="#">JQ</a>
-                </div>
-
                 {/* YouTube and LinkedIn Icons */}
                 <div className="flex">
                     <a
