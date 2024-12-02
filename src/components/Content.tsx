@@ -2,9 +2,9 @@ import { FaGithub } from "react-icons/fa";
 
 const Content: React.FC = () => {
     return (
-        <div className="flex flex-col items-center h-auto animated-fade-in cursor-default">
+        <div className="flex flex-col items-center h-auto animated-fade-in cursor-default x-5 max-w-2xl mx-auto">
             {/* Header Section */}
-            <div className="mt-40 flex flex-col items-center">
+            <div className="mt-40 w-full items-center">
                 <img
                     src="/me.jpg"
                     className="w-32 h-32 rounded-full"
@@ -16,14 +16,14 @@ const Content: React.FC = () => {
                     <span className="color-transition hover-cyber-purple"> MECHANICAL</span> ENGINEERING STUDENT
                 </h3>
                 <h3 className="text-sm font-bold mt-2">jjquaratiello@gmail.com</h3>
-                <div className="flex flex-row items-center rounded-xl p-3 space-x-3 mt-4 cursor-default transform transition-transform duration-300 hover:scale-105">
+                <div className="flex flex-row items-center rounded-xl space-x-3 mt-4 cursor-default">
                     <img src="/dartmouth.jpg" className="w-10 h-10 object-cover rounded-lg" alt="Dartmouth Logo" />
                     <h3 className="text-sm font-medium text-white">Dartmouth College</h3>
                 </div>
             </div>
 
             {/* Passion Section */}
-            <div className="w-full max-w-2xl mt-20">
+            <div className="w-full mt-20">
                 <h2 className="text-xl font-bold mb-4 text-white">About Me</h2>
                 <p className="text-md leading-relaxed text-white font-normal">
                     I am a passionate builder with a love for learning and discovery. I thrive on tackling
@@ -39,7 +39,7 @@ const Content: React.FC = () => {
             </div>
 
             {/* Work Timeline */}
-            <div className="w-full max-w-2xl mt-20">
+            <div className="w-full mt-20">
                 <h2 className="text-xl font-bold mb-4 text-white">What I've Done So Far</h2>
                 <div>
                     {/* Timeline Items */}
@@ -102,7 +102,7 @@ const Content: React.FC = () => {
             </div>
 
             {/* Projects */}
-            <div className="w-full max-w-2xl mt-10">
+            <div className="w-full mt-10">
                 <h2 className="text-xl font-bold mb-4 text-white">Some Cool Projects</h2>
                 {/* Scrollable Container */}
                 <div className="grid grid-cols-1 gap-6">
@@ -133,7 +133,7 @@ const Content: React.FC = () => {
                     ].map((project, index) => (
                         <div
                             key={index}
-                            className="relative bg-gray-800 p-6 rounded-lg shadow-lg z-0"
+                            className="relative bg-gray-800 p-6 rounded-lg -0"
                         >
                             {/* GitHub Button */}
                             {project.github && (
@@ -182,7 +182,7 @@ const Content: React.FC = () => {
                 </div>
             </div>
             {/* Courses Section */}
-            <div className="w-full max-w-2xl mt-20">
+            <div className="w-full mt-20">
                 <h2 className="text-xl font-bold mb-4 text-white">Relevant Courses</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {[
