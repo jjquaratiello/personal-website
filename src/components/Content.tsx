@@ -116,7 +116,7 @@ const Content: React.FC = () => {
                                 "A responsive portfolio website showcasing my projects, experience, and skills. Built using React, Tailwind CSS, and TypeScript with a focus on performance, clean design, and interactivity.",
                             tools: "React, Tailwind CSS, TypeScript",
                             video: "", // Optional: Include a link to a walkthrough video or skip
-                            github: "https://github.com/your-username/personal-website", // GitHub link
+                            github: "https://github.com/jjquaratiello/personal-website", // GitHub link
                             color: "bg-green-600",
                         },
                         {
